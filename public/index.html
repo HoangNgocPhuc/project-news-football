@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-3.3.6-dist\bootstrap-3.3.6-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="layout1.css">
+</head>
+<script src="js/jquery-3.0.0.js" type="text/javascript" ></script>
+<script type="text/javascript">
+	function clock(){
+		var date =new Date();
+		return date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + ":" + (date.getMonth()+1) + ":" + date.getFullYear() +"  ";
+	}
+	$(document).ready(function(e) {
+        $("#clock").html(clock());
+		
+		$("#doc-nhieu").click(function(e) {
+            $(".doc-nhieu").attr("style","display:block");
+			$(".binh-luan").attr("style","display:none");
+			$("#doc-nhieu").attr("style","font-weight:bold; font-size:150%;");
+			$("#binh-luan").attr("style","font-weight:bold; font-size:100%;");
+			$("#binh-luan").attr("style","font-weight:none");
+        });
+		$("#binh-luan").click(function(e) {
+            $(".doc-nhieu").attr("style","display:none");
+			$(".binh-luan").attr("style","display:block");
+			$("#binh-luan").attr("style","font-weight:bold");
+			$("#doc-nhieu").attr("style","font-weight:bold; font-size:100%;");
+			$("#binh-luan").attr("style","font-weight:bold; font-size:150%;");
+			$("#doc-nhieu").attr("style","font-weight:none");
+        });
+    });
+</script>
+<body
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!--header-->
+        <div class="header-top">
+        	<div id="clock"> </div>
+            <div style=" font-size:12px; font-weight:bold; color:white; padding-left:4px; padding-right:4px; float:left">|</div>
+            <div class="box">Tìm kiếm
+            	<input type="text" name="search" id="search"  >
+            	<i class="glyphicon glyphicon-search search" ></i>
+            </div> 
+            <a href="#">Đăng nhập</a> - <a href="#">Đăng ký</a> 
+        </div>
+        <!--end header -->
+        
+        <!--banner -->
+        <div class="banner">
+        	<div class="text"><a href="#">TIN THỂ THAO</a></div>
+        </div>
+        <!-- end banner-->
+        <div style="background:#DDDDDD; height:100%;">
+        <!-- menu -->
+        <div class="menu">
+        	<!--menu-top-->
+        	<div class="menu-top">
+        	
+       		</div>
+        	<!-- end menu top -->
+        	<!-- menu botton -->
+            <div class="menu-botton">
+            	<ul>
+                	<li><a href="#">EURO 2016</a>
+                    	<ul>
+                        	<li><a href="#">Tin EURO</a></li>
+                            <li><a href="#">Lịch Thi Đấu - Kết quả</a></li>
+                            <li><a href="#">Bên Lề</a></li>
+                            <li><a href="#">Ảnh đẹp</a></li>
+                            <li><a href="#">Bạn Đọc và EURO</a></li>
+                       		<li><a href="#">Bạn Đọc</a></li>
+                            <li><a href="#">Bài Hát EURO</a></li>
+                            <li><a href="#">Hồ Sơ Đội Bóng</a></li>
+                            <li><a href="#">Các Ký EURO</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">QUỐC TẾ</a>
+                		<ul>
+                        	<li><a href="#">Chuyển Nhượng</a></li>
+                            <li><a href="#">Bóng Đá Anh</a></li>
+                            <li><a href="#">Bóng Đá Tây Ban Nha</a></li>
+                            <li><a href="#">Bóng Đá Đức</a></li>
+                            <li><a href="#">Bóng Đá Ý</a></li>
+                       		<li><a href="#">Bóng Đá Pháp</a></li>
+                            <li><a href="#">Bóng Đá Châu Mỹ</a></li>
+                            <li><a href="#">FIFA</a></li>
+                            <li><a href="#">Gia Hữu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">VIỆT NAM</a>
+                    	<ul>
+                        	<li><a href="#">V-League</a></li>
+                            <li><a href="#">Cúp Quốc Gia</a></li>
+                            <li><a href="#">Bóng Đá Nữ</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">CHAMPIONS LEAGUE</a>
+                    	<ul>
+                        	<li><a href="#">Lịch Thi Đấu - Kết Quả</a></li>
+                            <li><a href="#">Bảng Xếp Hạng</a></li>
+                           
+
+                        </ul>
+                    </li>
+                    <li><a href="#">QUẦN VỢT</a>
+                    	<ul>
+                        	<li><a href="#">Tin Quần Vợt</a></li>
+                            <li><a href="#">Cách Chơi</a></li>
+                            <li><a href="#">Bảng Xếp Hạng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BÊN LỀ</a></li>
+                    <li><a href="#">CHUYỂN NHƯỢNG</a></li>
+                    <li><a href="#">PHOTOS</a></li>
+                    <li><a href="#">BẠN ĐỌC</a></li>
+                </ul>
+            </div>
+            <!-- end menu botton -->
+       </div>
+       <!-- end menu -->
+       
+       <!-- content -->
+
+       <div class="content">
+        <!-- contain main -->
+        <div class="content-main">
+       		<!-- content left -->
+            <div class="content-left">
+            	<a href="#"><img src="images/95790d757de741.jpg" ></a>
+                <div class="title"><a href="#">U16 Đông Nam Á: Hạ chủ nhà Campuchia, Việt Nam tái ngộ Australia ở chung kết</a></div>
+                <div class="tin">Đánh bại chủ nhà U16 Campuchia ở trận bán kết hai, U16 Việt Nam chính thức tái ngộ U16 Australia ở trận chung kết U16 Đông Nam Á 2016.	</div>
+			<div class="content-left-bottom">
+            	<div class="title">Tin chính khác</div>
+                <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">1 Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+                 <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                 </div>
+            </div>
+            </div>
+            <!-- end content left -->
+            
+            <!-- content center -->
+            <div class="content-center">
+            	<div class="title">Tin mới nhất</div>
+                <div class="scroll">
+                	<div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">1 Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+ 					<div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>
+                    <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>                  
+                </div>
+                
+                <div class="content-center-photo">
+                	<div class="title">Photo mới</div>
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                </div>
+                
+                 <div class="content-center-video">
+                	<div class="title">Bạn đọc</div>
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                     <div class="tin">
+                    	<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    </div>   
+                </div>
+            </div>
+            <!-- end content center -->
+            <div class="content-bot">
+       <!-- tin chuyen nhương -->
+       <div class="form">
+            <div class="title"><a href="#">Tin Chuyển Nhượng</a></div>
+            <div class="tin-tren">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-trai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-phai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div>   
+            <div style="clear:both"></div>
+            <ul style="background:white; margin-top:10px; padding-top:10px; padding-bottom:20px;;">
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+            </ul>
+       </div>
+       <!-- end tin chuyen nhương -->
+       
+       <!-- bóng đá quốc tế -->
+        <div class="form">
+            <div class="title"><a href="#">Bóng Đá Quốc Tế</a></div>
+            <div class="tin-tren">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-trai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-phai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div>   
+            <div style="clear:both"></div>
+            <ul style="background:white; margin-top:10px; padding-top:10px; padding-bottom:20px;;">
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+            </ul>
+       </div>
+       <!-- end bóng đá quốc tế -->
+       
+       <!-- Bài viết bạn đọc -->
+        <div class="form">
+            <div class="title"><a href="#">Bài Viết Bạn Đọc</a></div>
+            <div class="tin-tren">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-trai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div> 
+             <div class="tin-duoi-phai">
+                <a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                <a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+            </div>   
+            <div style="clear:both"></div>
+            <ul style="background:white; margin-top:10px; padding-top:10px; padding-bottom:20px;;">
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+                <li><a href="#">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a></li>
+            </ul>
+       </div>
+       <!-- end bài viết bạn đọc -->
+       </div>
+       <!-- end content bottom -->
+        </div>
+        <!-- end content main -->  
+        <!-- Right -->
+        <div class="right">  
+            <!-- content right -->
+            <div class="content-right">
+            	<div class="quangcao1">Quảng cáo</div>
+                <div class="quangcao1">Quảng cáo</div>
+                <div class="content-right-bottom">
+                	<div class="title">Đọc nhiều nhất</div>
+                    <div class="bang-tin">
+                    	 <div class="tin">
+                    		<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        	<a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                            <hr>
+                    	</div>   
+                    	 <div class="tin">
+                    		<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        	<a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                            <hr>
+                    	</div> 
+                        <div class="tin">
+                    		<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        	<a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                            <hr>
+                    	</div>  
+                        <div class="tin">
+                    		<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        	<a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                            <hr>
+                    	</div>    
+                    	<div class="tin">
+                    		<a href="#" class="link-image"><img src="images/95790d757de741.jpg"></a>
+                        	<a href="#" class="link">Những cảm xúc trái chiều sau trận thắng của U16 Việt Nam</a>
+                    	</div>   
+             		</div>
+                </div>
+            </div>
+            <!-- end content right -->
+             <!-- content bot right -->
+       <div class="content-bot-right">
+            <div class="tieu-de">
+                <input type="button" value="Đọc nhiều" id="doc-nhieu" >
+                <input type="button" value="Bình luận" id="binh-luan" >
+            </div>
+            <div class="doc-nhieu">
+                <a href="#">Danh sách chuyển nhượng mùa Hè 2016</a><br> <hr>
+                <a href="#">Đại chiến HLV ngoại ở Premier League: Nước Anh càng... thiệt</a><br><hr>
+                <a href="#">Danh sách chuyển nhượng mùa Hè 2016</a><br><hr>
+                <a href="#">Đại chiến HLV ngoại ở Premier League: Nước Anh càng... thiệt</a><br><hr>
+                <a href="#">Danh sách chuyển nhượng mùa Hè 2016</a>
+            </div>
+            <div class="binh-luan">
+                <a href="#">M.U đạt thỏa thuận cá nhân với Paul Pogba</a><br><hr>
+                <a href="#">Cầu thủ xuất sắc nhất châu Âu: Top 10 chưa hoàn hảo</a><br><hr>
+                <a href="#">M.U đạt thỏa thuận cá nhân với Paul Pogba</a><br><hr>
+                <a href="#">Cầu thủ xuất sắc nhất châu Âu: Top 10 chưa hoàn hảo</a><br><hr>
+                <a href="#">M.U đạt thỏa thuận cá nhân với Paul Pogba</a>
+            </div>
+       </div>
+       <!-- end content bottom right -->
+       <div style="clear:both"></div>
+        </div>    
+        <!-- end right -->    
+            <div style="clear:both"></div>
+       </div>
+       <!-- end content -->
+       <!-- footer -->
+       <div class="footer">
+       		Địa chỉ liên hệ : DEV
+       </div>
+       
+       <!-- end footer -->
+       </div>
+	</div>
+	<!-- end wrapper -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /project_devpro/
+RewriteRule ^index.php/list_news/([0-9]+)/([0-9]+)$ index.php?controller=list_news&id_parent=$1&id_child=$2
+RewriteRule ^index.php/list_news/([0-9]+)$ index.php?controller=list_news&id_parent=$1
+RewriteRule ^index.php/news/([0-9]+)$ index.php?controller=news&id=$1
+RewriteRule ^index.php/user_write/([0-9]+)$ index.php?controller=user_write&id=$1
+RewriteRule ^index.php/content_featured_news/([0-9]+)$ index.php?controller=content_featured_news&id=$1
+RewriteRule ^index.php/list-user-write$ index.php?controller=list_user_write
+RewriteRule ^index.php/content-user-write/([0-9]+)$ index.php?controller=content_user_write&id=$1
+RewriteRule ^index.php/go$ index.php?controller=go
